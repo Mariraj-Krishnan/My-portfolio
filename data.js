@@ -134,7 +134,7 @@ const details = [
       "In this dynamic image slider you can hot code the source of images in the javascript array, this will create an image slider with previous and next buttons.",
     responsive: "yes",
     image: "./assets/detailed_images/image-slider.png",
-    thump: "./assets/image-slider_quarter.png",
+    thump: "./assets/detailed_images/image-slider.png",
     size: "quarter",
     link: "https://mariraj-krishnan.github.io/Simple-Image-Slider/",
   },
