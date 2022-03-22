@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="message">
+      <div>
+        <p>
+          This portfolio webpage is responsive to smaller screens also.But I
+          want you to see the original design of this page.So, please view this
+          page on desktop browsers or resize your browser window to the full
+          screen.
+        </p>
+        <button onclick="this.closest('.message').classList.remove('active')">
+          Ok, close
+        </button>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <h3>Portfolio</h3>
+        <ul>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+      </nav>
+      <div>
+        <div>
+          <h1>Hello, I am <big>Mariraj K</big></h1>
+          <h4>Want to be a front-end developer</h4>
+        </div>
+        <img src="./assets/bg3.png" />
+      </div>
+    </header>
+    <section class="about-me" id="about-me">
+      <div>
+        <h1>My name is Mariraj K</h1>
+        <h2>Currently pursuing 3rd year B.E</h2>
+        <h3>Tenkasi district, Tamilnadu, India</h3>
+      </div>
+      <h1>About me</h1>
+    </section>
+    <section class="skills" id="skills">
+      <div>
+        <ul class="developement">
+          <li><img src="./assets/html_logo.svg" />HTML</li>
+          <li><img src="./assets/css_logo.svg" />CSS</li>
+          <li><img src="./assets/js_logo.svg" />JavaScript</li>
+          <li><img src="./assets/react_logo.svg" />React</li>
+        </ul>
+        <ul class="design">
+          <li><img src="./assets/xd_logo.svg" />Adobe XD</li>
+          <li><img src="./assets/illustrator_logo.svg" />Adobe illustrator</li>
+        </ul>
+      </div>
+      <h1>Skills</h1>
+    </section>
+    <section class="projects" id="projects">
+      <h1>Projects</h1>
+      <div class="container"></div>
+    </section>
+    <section class="contact-me" id="contact-me">
+      <div>
+        <h4>
+          Write
+          <big
+            title="click to copy"
+            onclick="
+          navigator.clipboard.writeText(this.textContent);"
+            >mariraj.krishnan@outlook.com</big
+          >
+        </h4>
+        <h4>
+          Phone
+          <big
+            title="click to copy"
+            onclick="
+          navigator.clipboard.writeText(this.textContent);"
+            >+91 82489 83454</big
+          >
+        </h4>
+      </div>
+      <h1>Contact me</h1>
+    </section>
+    <div class="icons">
+      <a href="https://github.com/Mariraj-Krishnan" target="_blank">
+        <i class="lab la-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/mariraj-k-62720a233" target="_blank">
+        <i class="lab la-linkedin-in"></i>
+      </a>
+      <a
+        href="https://twitter.com/MarirajK1?t=3dzCgSZU_i7oaFgtZbolcw&s=09"
+        target="_blank"
+      >
+        <i class="lab la-twitter"></i>
+      </a>
+    </div>
+    <div class="modal-container">
+      <div class="modal">
+        <i
+          class="las la-times"
+          onclick="this.closest('.modal-container').classList.remove('active')"
+        ></i>
+        <img src="" />
+        <div class="details">
+          <h2></h2>
+          <p></p>
+          <h4>Responsive? <span class="responsive"></span></h4>
+          <a href="" target="_blank">Visit</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
