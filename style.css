@@ -22,7 +22,6 @@ body {
   line-height: 1.5;
 }
 .message {
-  position: absolute;
   display: none;
   align-items: center;
   justify-content: center;
@@ -336,6 +335,7 @@ section > h1 {
 .modal div p {
   font-size: 14px;
   font-weight: 400;
+  text-align: justify;
   margin-bottom: 24px;
 }
 .modal div h4 {
