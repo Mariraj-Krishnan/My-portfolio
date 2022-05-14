@@ -1,4 +1,4 @@
-.active .loader {
+.loaded .loader {
   display: none;
 }
 .loader {
@@ -12,6 +12,7 @@
   justify-content: center;
   position: absolute;
   background-color: hsla(0deg, 0%, 0%, 0.5);
+  font-family: "lexend", sans-serif;
 }
 .lds-ring {
   display: inline-block;
