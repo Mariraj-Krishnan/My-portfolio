@@ -1,5 +1,8 @@
 const projects = document.querySelector(".projects .container");
 const modal = document.querySelector(".modal-container");
+const navList = document.querySelector(".nav-list");
+const menuBtn = document.getElementById("menu-button");
+document.body.onload = document.body.classList.add("active");
 function projectRenderer() {
   const fragement = document.createDocumentFragment();
   details.forEach((el, index) => {
@@ -19,7 +22,7 @@ function projectRenderer() {
   });
 }
 projectRenderer();
-function projectViewer(ev) {
+function projectViewer() {
   modal.querySelector("h2").textContent = details[this.id].title;
   modal.querySelector("p").textContent = details[this.id].content;
   modal.querySelector(".responsive").textContent = details[this.id].responsive;
@@ -30,3 +33,15 @@ function projectViewer(ev) {
 if (window.innerWidth < 1000) {
   document.querySelector(".message").classList.add("active");
 }
+function menuAction() {
+  if (navList.classList.contains("active")) {
+    navList.classList.remove("active");
+    menuBtn.classList.remove("la-times");
+    return;
+  }
+  menuBtn.classList.add("la-times");
+  navList.classList.add("active");
+}
+navList
+  .querySelectorAll("li")
+  .forEach((el) => el.addEventListener("click", menuAction));
