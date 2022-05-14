@@ -2,7 +2,7 @@ const projects = document.querySelector(".projects .container");
 const modal = document.querySelector(".modal-container");
 const navList = document.querySelector(".nav-list");
 const menuBtn = document.getElementById("menu-button");
-document.body.onload = document.body.classList.add("active");
+document.body.onload = document.body.classList.add("loaded");
 function projectRenderer() {
   const fragement = document.createDocumentFragment();
   details.forEach((el, index) => {
