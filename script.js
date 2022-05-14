@@ -32,7 +32,9 @@ function projectViewer() {
 if (window.innerWidth < 1000) {
   document.querySelector(".message").classList.add("active");
 }
-window.onload = document.body.classList.add("loaded");
+window.onload = () => {
+  document.body.classList.add("loaded");
+};
 function menuAction() {
   if (navList.classList.contains("active")) {
     navList.classList.remove("active");
