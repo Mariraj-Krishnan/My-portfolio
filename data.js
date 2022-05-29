@@ -156,7 +156,7 @@ const details = [
     image: "./assets/user-info-full.png",
     thump: "./assets/user-info-full.png",
     size: "full",
-    link: "https://browser-info.epizy.com",
+    link: "http://browser-info.epizy.com",
   },
   {
     title: "Shapes remembering game",
